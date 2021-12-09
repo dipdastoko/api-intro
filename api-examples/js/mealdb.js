@@ -1,3 +1,11 @@
+const searchBtn = document.getElementById('button-search');
+const searchInput = document.getElementById('search-field');
+
+searchInput.addEventListener("keypress", function (event) {
+    // event.preventDefault();
+    if (event.key == 'Enter')
+        searchBtn.click();
+})
 
 const searchResult = document.getElementById('search-result');
 
